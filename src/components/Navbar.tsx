@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-6">
           <Link to="/benefits" className="text-gray-700 hover:text-caramel-600 transition-colors">
             Benefits
           </Link>
@@ -55,8 +55,11 @@ const Navbar = () => {
           <Link to="/contact" className="text-gray-700 hover:text-caramel-600 transition-colors">
             Contact
           </Link>
-          <Button className="bg-caramel-600 hover:bg-caramel-700 text-white">
-            Get Started
+          <Link to="/login" className="text-gray-700 hover:text-caramel-600 transition-colors">
+            Login
+          </Link>
+          <Button asChild className="bg-caramel-600 hover:bg-caramel-700 text-white">
+            <Link to="/signup">Get Started</Link>
           </Button>
         </nav>
 
@@ -88,8 +91,11 @@ const Navbar = () => {
             <Link to="/contact" className="text-gray-700 hover:text-caramel-600 transition-colors">
               Contact
             </Link>
-            <Button className="bg-caramel-600 hover:bg-caramel-700 text-white w-full">
-              Get Started
+            <Link to="/login" className="text-gray-700 hover:text-caramel-600 transition-colors">
+              Login
+            </Link>
+            <Button asChild className="bg-caramel-600 hover:bg-caramel-700 text-white w-full">
+              <Link to="/signup">Get Started</Link>
             </Button>
           </div>
         </div>
